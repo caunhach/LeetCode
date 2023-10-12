@@ -15,8 +15,7 @@ class Solution{
 			len_l++;
 		}
 		else {
-			if (len_l > len_r)
-			{
+			if (len_l > len_r){
 				right = left;
 				len_r = len_l;
 				len_l = 0;
@@ -25,11 +24,11 @@ class Solution{
 		}
 		i++;
 	}
-	if (len_l > len_r)
-	{
+	if (len_l > len_r){
 		right = left;
 		len_r = len_l;
 	}
+	System.out.println(right);
 	return len_r;
 	}
 }
@@ -37,7 +36,7 @@ class Solution{
 public class len_longest{
 	public static void main(String[] args){
 	Solution s = new Solution();
-	int ans = s.lengthOfLongestSubstring("pwwkewabcdwabc");
+	int ans = s.lengthOfLongestSubstring("pwwkewabc");
 	System.out.println(ans);
 	}
 }
